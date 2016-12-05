@@ -71,6 +71,7 @@ bool process_command_line(int argc, char **argv, std::string &file_name, int &ye
             return false;
         }
         po::notify(vm);
+        return true;
     }
     catch(std::exception& e){
         std::cerr << "Error: " << e.what() << "\n";
