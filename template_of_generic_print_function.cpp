@@ -19,7 +19,7 @@ int main(){
 		6, 9,
 		5.7, 1.86;
 
-  print< decltype(m)/*Eigen::MatrixXd*/>("first matrix  ", m);
+	print< decltype(m)/*Eigen::MatrixXd*/>("first matrix  ", m);
 	print< decltype(m.cols())>("number of cols", m.cols());
 	print< decltype(m.prod())>("prod", m.prod());
 	print< decltype(m.transpose()) >("Transpose matrix  ", m.transpose());
